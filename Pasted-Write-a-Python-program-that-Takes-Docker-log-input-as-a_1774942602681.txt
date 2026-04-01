@@ -1,0 +1,78 @@
+Write a Python program that:
+- Takes Docker log input as a string
+- Detects error patterns using keyword matching
+
+Categories:
+1. Configuration Error
+2. Network Error
+3. Dependency Readiness Issue
+
+Example keywords:
+- "connection refused" → Network
+- "port already in use" → Configuration
+- "service unavailable" → Dependency
+
+Requirements:
+- Use clean functions
+- Return category + detected keyword
+- Add comments for understanding.   Improve the previous Python log classifier by:
+- Supporting multiple error matches
+- Assigning confidence score (0–1)
+- Returning top 3 possible categories
+
+Keep logic simple (no ML).You are a DevOps expert.
+
+Write a Python function that:
+- Takes category and error keyword
+- Returns:
+  1. Top 3 possible causes
+  2. Step-by-step fixes
+
+Use dictionary-based mapping (no API calls).
+
+Example:
+"connection refused" → DB not running → suggest depends_on fix Write a Python function that:
+- Reads Docker logs from a .txt file
+- Cleans unnecessary lines
+- Returns only error-related lines
+
+Keep it simple and readable.Combine all previous modules into one Python program:
+- Read log file
+- Detect error
+- Classify category
+- Generate causes and fixes
+- Print formatted output
+
+Also:
+- Make output clean and readable
+- Add headings like:
+  "Error Detected", "Category", "Suggested Fix" Generate 10 sample Docker error logs covering:
+- Network issues
+- Configuration issues
+- Dependency issues
+
+Make them realistic (like actual Docker errors).Write a Python script to:
+- Run the analyzer on multiple logs
+- Count how many are correctly classified
+- Print accuracy percentage
+
+Assume expected category is provided.Write a Python function that:
+- Generates an HTML report from results
+
+Include:
+- Error log
+- Category
+- Causes
+- Fixes
+
+Make it simple but visually clean (basic HTML).Write a project report for a "Docker Failure Analyzer" including:
+
+1. Introduction
+2. Problem Statement
+3. System Architecture
+4. Implementation Details
+5. Results and Analysis
+6. Limitations
+7. Future Work
+
+Keep it simple and human-written (not AI sounding).
